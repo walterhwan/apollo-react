@@ -1,0 +1,39 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "semi": ["warn", "never"],
+    "global-require": "off",
+    "arrow-parens": "off",
+    "arrow-body-style": "off",
+    "comma-dangle": "off",
+    "newline-per-chained-call": [
+      "error",
+      {
+        "ignoreChainWithDepth": 2
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "prefer-destructuring": [
+      "off",
+      {
+        "array": true,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ]
+  }
+}

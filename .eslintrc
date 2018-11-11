@@ -6,11 +6,13 @@
   },
   "rules": {
     "prettier/prettier": ["error"],
+    "react/prefer-stateless-function": "off",
     "semi": ["warn", "never"],
     "global-require": "off",
     "arrow-parens": "off",
     "arrow-body-style": "off",
     "comma-dangle": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "newline-per-chained-call": [
       "error",
       {

@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import { ApolloClient } from 'apollo-client'
+import { HttpLink } from 'apollo-link-http'
+import { InMemoryCache } from 'apollo-cache-inmemory'
+import logo from './logo.svg'
 
 class App extends Component {
   render() {
@@ -9,7 +12,9 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Edit&nbsp
+            <code>src/App.js</code>
+            &nbspand save to reload.
           </p>
           <a
             className="App-link"
@@ -21,8 +26,8 @@ class App extends Component {
           </a>
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
